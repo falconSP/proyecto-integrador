@@ -1,1 +1,3 @@
-# proyecto-integrador
+# sitio E-Commerce 
+
+Cami, Gonza y Pato... 
