@@ -13,6 +13,8 @@ include_once ("includes/head.php");
 	<h1 style="black" class="contacto">- Contacto -</h1>
 </section>
 
+<p>Esto lo hizo Pato</p>
+
 
 <div class="contenedor-contacto">
  	<form>
