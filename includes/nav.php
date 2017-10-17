@@ -12,7 +12,7 @@
     </li>
     <li><a href="index.php">Home</a></li>
     <li><a href="faq.php">Preguntas frecuentes</a></li>
-    <li><a href="registro.php">Log in</a></li>
-    <li><a href="contacto.php">Contacto</a></li>
+    <li><a href="login.php">Log in</a></li>
+    <li><a href="registro.php">Registrate</a></li>
   </ul>
 </nav>

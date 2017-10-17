@@ -434,9 +434,13 @@ label #remember-pass {
 
 }
 
-
 /*fin de registro*/
 
+.container_formulario {
+  text-align: center;
+  padding: 30px;
+
+}
 
 
 
