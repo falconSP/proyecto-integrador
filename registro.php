@@ -76,17 +76,17 @@ if (empty($errores)) {
 
       </div>
       <div class="container_formulario">
-
-    <form class="formulario" action="" method="post">
-      Nombre completo <input type="text" name="name" value="<?php if(isset($name)){echo $name;} ?>"><br>
-      E-mail <input type="email" name="email" value="<?php if(isset($email)){echo $email;} ?>"><br>
-      Edad <input type="number" name="age" value="<?php if(isset($age)){echo $age;} ?>"><br>
-      Contraseña <input type="password" name="pass" value="" placeholder="Escriba su contaseña"><br>
-      Repita la contraseña <input type="password" name="repass" value="" placeholder="Vuelva a escribir la contraseña"><br>
-      Subi tu imagen <input type="file" name="perfil" value=""><br>
-      <button type="submit" name="button">Enviar</button>
-    </form>
+        <!-- agrego enctype multiform para probar si anda file upload -->
+        <form class="formulario" action="" method="post" enctype="multipart/form-data">
+          Nombre completo <input type="text" name="name" value="<?php if(isset($name)){echo $name;} ?>"><br>
+          E-mail <input type="email" name="email" value="<?php if(isset($email)){echo $email;} ?>"><br>
+          Edad <input type="number" name="age" value="<?php if(isset($age)){echo $age;} ?>"><br>
+          Contraseña <input type="password" name="pass" value="" placeholder="Escriba su contaseña"><br>
+          Repita la contraseña <input type="password" name="repass" value="" placeholder="Vuelva a escribir la contraseña"><br>
+          Subi tu imagen <input type="file" name="perfil" value=""><br>
+          <button type="submit" name="button">Enviar</button>
+        </form>
     </div>
-    
+
   </body>
 </html>
