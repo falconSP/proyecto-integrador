@@ -249,8 +249,6 @@ footer p{
   padding: 20px;
 }
 
-/*.contenedor:hover .imagen {-webkit-transform:scale(0.9);transform:scale(0.9);}*/
-
 
 .imagen0:hover, .imagen1:hover, .imagen2:hover, .imagen3:hover, .imagen4:hover, .imagen5:hover, .imagen6:hover, .imagen7:hover{
 -webkit-transform: rotateY(180deg);
@@ -261,7 +259,6 @@ transform-style: preserve-3d;
 
 .img0, .img1, .img2, .img3, .img4, .img5, .img6, .img7{
   margin: auto;
-/*	background-color: greenyellow;*/
 text-align: center;
 }
 
@@ -271,26 +268,18 @@ text-align: center;
 
 .preg0, .preg1, .preg2, .preg3, .preg4, .preg5, .preg6, .preg7{
   float:left;
-/*	background-color: aqua;*/
   margin: 50px;
 }
 
 .pregunta0, .pregunta1, .pregunta2, .pregunta3, .pregunta4, .pregunta5, .pregunta6, .pregunta7{
   margin: auto;
   overflow: hidden;
-/*	background-color: coral;*/
   text-align: center;
 
 }
 
 .a-pregunta:hover {
   color: orange;
-}
-
-
-/* ocultamos el checkbox */
-#abre-respuesta0, #abre-respuesta1, #abre-respuesta2, #abre-respuesta3, #abre-respuesta4, #abre-respuesta5, #abre-respuesta6, #abre-respuesta7{
-  display: none;
 }
 
 .contactanos{
@@ -331,108 +320,123 @@ text-align: center;
 }
 
 
-.titulo-contacto{
-  padding-top: 10px;
-  background-color:#85C1E9;
-  width: 100%;
-  height: 150px;
-  margin-bottom: 20px;
-  border-bottom: solid white 5px;
-  margin-top: 90px;
+/* ocultamos el checkbox */
+#abre-respuesta0, #abre-respuesta1, #abre-respuesta2, #abre-respuesta3, #abre-respuesta4, #abre-respuesta5, #abre-respuesta6, #abre-respuesta7{
+  display: none;
 }
 
-.contacto{
-  font-size: 50px;
-  text-align: center;
+
+/*ESTILO CONTACTO INDEX*/
+
+.contenedor-contacto{
+	background-color: white;
+	margin: 10% auto;
+	width: 70%;
+}
+
+#input1, #input2, #input3, #input4{
+	width: 80%;
+	font-size: 2em;
+	border: solid 1px black;
+	text-align: center;
+}
+#input5{
+	border: solid 3px orange;
+	font-size: 2em;
+	background-color: white;
+}
+
+#input1:hover, #input2:hover, #input3:hover, #input4:hover{
+	border: solid 1px orange;
+}
+#input5:hover{
+	color: orange;
+}
+
+
+
+.nombre-contacto, .mail-contacto, .asunto-contacto, .mensaje-contacto{
+	margin-bottom: 10%;
+	text-align: center;
+}
+.nombre-contacto{
+	border-top: double 10px orange;
+	padding-top: 10%;
 }
 
 .contenedor-contacto{
-  background-color: orange;
-  font-size: 30px;
-  margin: 50px auto;
-  padding: 50px;
-  width: 700px;
-  box-shadow: 0 0 30px #000;
+	padding: 5%;
+	text-align: center;
 }
 
-
-.nombre-contacto, .mail-contacto, .asunto-contacto{
-  margin-bottom: 30px;
-}
-
-textarea{
-  width: 600px;
-  height: 200px;
-  border: solid 1px black;
-}
-
-/*boton de enviar*/
-#input4{
-  width: 100px;
-  font-size: 20px;
-  background-color:#85C1E9;
-  color: black;
-  border: solid 1px black;
-}
-
-/*input del nomre y mail*/
-#input1, #input2, #input3{
-  width: 400px;
-  font-size: 25px;
-  border: solid 1px black;
+.enviar-contacto{
+	width: 100%;
+	text-align: center;
 }
 
 .super-contenedor0, .super-contenedor1, .super-contenedor2, .super-contenedor3, .super-contenedor4, .super-contenedor5, .super-contenedor6, .super-contenedor7{
   width:80%;
   margin: 2% auto;
   overflow: hidden;
-  /*padding: 2%;*/
 }
 /*Fin de faq.php y contacto.php*/
 
 
 /*A partir de aca el registro y login en mobile first*/
-
-
-.main-register-container {
-  border: 3px solid black;
-  width: 100%;
+.errores{
+	font-size: 1em;
+	margin-bottom: 5%;
+	text-align: left;
+	color: red;
 }
 
-.main-login-container, .main-register {
-  border: 3px solid white;
-  width: 98%;
-  margin: auto;
-  font-size: 2em;
-  padding: 2% 2%;
-}
-.main-login-container {
-padding-top: 120px;
+.container-formulario{
+	width: 90%;
+	margin: 25% auto;
+	padding: 5% 15%;
+	text-align: center;
+	font-size: 2em;
+	background-color: white;
 }
 
-.main-login-container input {
-  display: block;
-  overflow: hidden;
+
+.registro-cont-nombre, .registro-cont-correo, .registro-cont-edad, .registro-cont-pass, .registro-cont-repass, .registro-cont-avatar{
+	margin-bottom: 10%;
+	text-align: center;
+/*	overflow: hidden;*/
+}
+.registro-cont-nombre{
+	padding-top: 10%;
+	border-top: double 10px orange;
 }
 
-.main-register input {
-  display: block;
-  overflow: hidden;
+.label-nombre-r, .label-correo-r, .label-edad-r, .label-pass-r, .label-repass-r, .label-avatar-r{
+/*	float: left;*/
 }
 
-.pass-login, .user-login {
-  margin: auto;
+.in-nombre-r, .in-correo-r, .in-edad-r, .in-pass-r, .in-repass-r, .in-avatar-r{
+/*	clear: both;*/
+	width: 100%;
+	border: solid 1px black;
 }
 
-label #remember-pass {
-  display: inline;
+.in-nombre-r:hover, .in-correo-r:hover, .in-edad-r:hover, .in-pass-r:hover, .in-repass-r:hover{
+	border: solid 1px orange;
 }
 
-.terms-conds {
-  padding: 5%;
-  font-size: 2em;
-
+#input-file{
+	font-size: 0.7em;
 }
+#input-file:hover{
+	color: orange;
+}
+
+.enviar-r{
+	border: solid 3px orange;
+	background-color: white;
+}
+
+
 
 
 /*fin de registro*/
@@ -521,4 +525,57 @@ label #remember-pass {
   .titulo{
     margin-top: 140px;
   }
+/*  contacto-index*/
+  #input1, #input2, #input3, #input4{
+	font-size: 2.5em;
+	}
+  #input5{
+	border: solid 5px orange;
+	font-size: 2.5em;
+    }
+  .contenedor-contacto{
+	width: 50%;
+    }
+  .titulo-contacto{
+	font-size: 2.5em;	
+	}
+/*	registro*/
+	.container-formulario{
+	width: 70%;
+	padding: 5%;
+	font-size: 2em;
+	margin-top: 20%;
+/*	background-color: red;*/
+	}
+	.primeros-tres{
+		float: left;
+/*		background-color: aqua;*/
+		width: 45%;
+	}
+	.segundos-tres{
+		float: right;
+/*		background-color: green;*/
+		width: 45%;
+	}
+	.registro-cont-nombre{
+	padding-top:0;
+	border-top:none;
+}
+	.enviar-r{
+		display: block;
+		margin: auto;
+		clear: both;
+	}
+
+	.registro-r{
+		border-bottom: double 10px orange;
+		border-top: double 10px orange;
+		margin-bottom: 10%;
+	}
+	.in-nombre-r, .in-correo-r, .in-edad-r, .in-pass-r, .in-repass-r, .in-avatar-r{
+	   margin-top: 3%;
+	}
+	
+	
+	
 }

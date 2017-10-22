@@ -1,3 +1,62 @@
+<?php
+
+require_once ('funciones.php');
+$name = "";
+$email = "";
+$age="";
+
+
+if ($_POST) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $age = $_POST['age'];
+
+  $errores = [];
+  if ($_POST['name']=='') {
+    $errores['name'] = 'Por favor, ingresa tu nombre.';
+  }
+  if ($_POST['email']=='') {
+    $errores['email'] = 'Por favor, ingresa tu e-mail.';
+  } elseif (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    $errores['email'] = 'Ingresa un e-mail valido';
+  }
+  if ($_POST['age']=='') {
+    $errores['age'] = 'Por favor, ingresa tu edad.';
+  }
+  if ($_POST['pass']=='') {
+    $errores['pass'] = 'Por favor, ingresa una contraseña.';
+  }
+  if ($_POST['repass']=='') {
+    $errores['repass'] = 'Por favor, repetí la contraseña.';
+  } elseif ($_POST['pass'] != $_POST['repass']) {
+    $errores['repass'] = 'Las contraseñas deben ser iguales.';
+  }
+
+	if (empty($errores)) {
+
+	  $errores = guardarImagen('perfil', $errores);
+
+	  if (empty($errores)) {
+		  $usuarioFinal = [
+			'id' => generarId(),
+			'name' => $_POST['name'],
+			'email' => $_POST['email'],
+			'age' => $_POST['age'],
+			'pass' => password_hash($_POST['pass'], PASSWORD_DEFAULT)
+		  ];
+
+		  $usuarioFinal = json_encode($usuarioFinal);
+		  file_put_contents('usuarios.json', $usuarioFinal . PHP_EOL, FILE_APPEND);
+
+	  	header('location: register_ok.php'); exit;
+	  }
+	}
+
+}
+
+
+ ?>
+
 <!DOCTYPE html>
 <html>
   <?php
@@ -7,94 +66,61 @@
 
     <?php
     include_once ("includes/nav.php");
-     ?>
-     <!DOCTYPE html>
-<html>
-  <?php
-  include_once ("includes/head.php");
-  ?>
-  <body>
+    ?>
 
-    <?php
-    include_once ("includes/nav.php");
-     ?>
-    <!-- Falta css -->
 
-			<!-- Probando -->
-			<!-- container-main-contacto
-			aca va a ir todo el container principal -->
-			<section class="main-register-container">
+    <div class="container-formulario">
+		   <div class="errores">
+			<ul>
+			  <?php if (isset($errores)): ?>
+				<?php foreach ($errores as $key => $value): ?>
+				  <li><?=$value?></li>
+				<?php endforeach; ?>
+			  <?php endif; ?>
+			</ul>
+		  </div>
+        <div class="registro-r"><h2>REGISTRO</h2></div>
+    	<form class="formulario" action="" method="post" enctype="multipart/form-data">
 
-				<!-- container login -->
-				<section class="main-login-container">
-					<h3>Ya tenes una cuenta? Dale Login</h3>
-					<article class="userLogin">
-						<label for="">Usuario</label>
-		      	<input type="text" name="Usuario" required>
-					</article>
-					<article class="passLogin">
-						<label for="">Contraseña</label>
-						<input type="password" name="Contraseña" required>
-						<input type="checkbox" name="Recordar Contraseña" required>
-						<label for="">Recordar Contraseña</label>
-						<input id="login-submit" type="submit" name="submit" value="Login">
+    	<div class="primeros-tres">
+    		<div class="registro-cont-nombre">
+    	  		<div class="label-nombre-r"><label>Nombre completo:</label></div>
+		  		<input type="text" name="name" value="<?php if(isset($name)){echo $name;}?>" class="in-nombre-r">
+			</div>
 
-					</article>
-				</section>
 
-				<!-- container registro -->
-				<section class="main-register">
-					<h3>Aun no tenes cuenta? registrate</h3>
-					<article class="nombreRegister">
-						<label for="">Nombre</label>
-						<input type="text" name="Nombre" placeholder="Nombre" required>
-					</article>
-					<article class="apellidoRegister">
-						<label for="">Apellido</label>
-		        <input type="text" name="Apellido" placeholder="Apellido" required>
-					</article>
-					<article class="birthRegister">
-						<label for="">Fecha de nacimiento</label>
-						<input type="date" name="fecha" required>
-					</article>
-					<article class="emailRegister">
-						<label for="">E-mail</label>
-		        <input type="email" name="E-mail" placeholder="E-mail" required>
-					</article>
-					<article class="userRegister">
-						<label for="">Usuario</label>
-		        <input type="text" name="Usuario" placeholder="Usuario" required>
-					</article>
-					<article class="passRegister">
-						<label for="">Contraseña</label>
-		        <input type="password" name="Contraseña" placeholder="Contraseña" required>
-					</article>
-					<article class="passagainRegister">
-						<label for=""> Repetir Contraseña</label>
-		        <input type="password" name="Repetir Contraseña" placeholder="Repetir Contraseña" required>
-					</article>
-				</section>
+			<div class="registro-cont-correo">
+				<div class="label-correo-r"><label>Correo Electrónico:</label></div>
+		    	<input type="email" name="email" value="<?php if(isset($email)){echo $email;} ?>" class="in-correo-r">
+			</div>
 
-				<section class="terms-conds">
-					<article class="">
+			<div class="registro-cont-edad">
+		  		<div class="label-edad-r"><label>Edad:</label></div>
+		  		<input type="number" name="age" value="<?php if(isset($age)){echo $age;} ?>" class="in-edad-r">
+			</div>
+	   </div>
 
-						<input type="checkbox" name="checkbox" value="check" required> I have read and agree to the Terms and Conditions and Privacy Policy
-						<input id="register-submit" type="submit" name="submit" value="Registrarme">
-					</article>
-				</section>
+	  <div class="segundos-tres">
+			<div class="registro-cont-pass">
+				<div class="label-pass-r"><label>Contraseña:</label></div>
+		  		<input type="password" name="pass" class="in-pass-r">
+			</div>
 
-				</section>
 
-    <?php
-    include_once ("includes/footer.php")
-     ?>
+			<div class="registro-cont-repass">
+		  		<div class="label-repass-r"><label>Repita la Contraseña:</label></div>
+		  		<input type="password" class="in-repass-r" name="repass">
+			</div>
+
+			<div class="registro-cont-avatar">
+		  		<div class="label-avatar-r" class="in-avatar-r"><label>Subi tu avatar:</label></div>
+		  		<input id="input-file" type="file" name="perfil" value="">
+			</div>
+	  </div>
+
+      <button type="submit" class="enviar-r" name="button">ENVIAR</button>
+   </form>
+ </div>
 
   </body>
 </html>
-    <?php
-    include_once ("includes/footer.php")
-     ?>
-
-  </body>
-</html>
-
