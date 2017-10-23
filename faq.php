@@ -187,7 +187,15 @@ include_once ("includes/nav.php");
 
 <a href="contacto.php">
 	<div class="contactanos">
+<<<<<<< HEAD
 		<div class="contactanos-p"><p><a href="index.php#ancla_contacto">¿Más preguntas? ¡Contactanos!</a></p></div>
+=======
+<<<<<<< HEAD
+		<div class="contactanos-p"><p><a href="index.php#ancla_contacto">¿Más preguntas? ¡Contactanos!</a></p></div>
+=======
+		<div class="contactanos-p"><p>¿Más preguntas? ¡Contactanos!</p></div>
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
+>>>>>>> 013ff666f45a1c9f68d55531a173f5a34a967062
 		<label class="arrow">
 			<span class="ion-arrow-right-c"></span><!-- icono de flecha -->
 		</label>
@@ -200,3 +208,11 @@ include_once ("includes/footer.php")
 
 </body>
 </html>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
+>>>>>>> 013ff666f45a1c9f68d55531a173f5a34a967062

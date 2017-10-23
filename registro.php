@@ -1,8 +1,18 @@
 <?php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 013ff666f45a1c9f68d55531a173f5a34a967062
 session_start();
 if (isset($_SESSION['userId'])) {
   header ('location: miperfil.php');
 }
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
+>>>>>>> 013ff666f45a1c9f68d55531a173f5a34a967062
 require_once ('funciones.php');
 $name = "";
 $email = "";
@@ -35,9 +45,22 @@ if ($_POST) {
     $errores['repass'] = 'Las contraseñas deben ser iguales.';
   }
 
+<<<<<<< HEAD
 	if (empty($errores)) {
 
 	  $errores= guardarImagen('perfil', $errores);
+=======
+<<<<<<< HEAD
+	if (empty($errores)) {
+
+	  $errores= guardarImagen('perfil', $errores);
+=======
+<<<<<<< HEAD
+	if (empty($errores)) {
+
+	  $errores = guardarImagen('perfil', $errores);
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
+>>>>>>> 013ff666f45a1c9f68d55531a173f5a34a967062
 
 	  if (empty($errores)) {
 		  $usuarioFinal = [
@@ -57,6 +80,31 @@ if ($_POST) {
 
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+if (empty($errores)) {
+  $usuarioFinal = [
+    'id' => generarId(),
+    'name' => $_POST['name'],
+    'email' => $_POST['email'],
+    'age' => $_POST['age'],
+    'pass' => password_hash($_POST['pass'], PASSWORD_DEFAULT)
+  ];
+
+  $usuarioFinal = json_encode($usuarioFinal);
+  file_put_contents('usuarios.json', $usuarioFinal . PHP_EOL, FILE_APPEND);
+
+  header('location: register_ok.php'); exit;
+}
+
+}
+>>>>>>> cb4a635514d9aade066d6b1b04f1236e9b97993d
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
+>>>>>>> 013ff666f45a1c9f68d55531a173f5a34a967062
 
  ?>
 
@@ -70,6 +118,13 @@ if ($_POST) {
     <?php
     include_once ("includes/nav.php");
     ?>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
+>>>>>>> 013ff666f45a1c9f68d55531a173f5a34a967062
 
 
     <div class="container-formulario">
@@ -84,6 +139,7 @@ if ($_POST) {
 		  </div>
         <div class="registro-r"><h2>REGISTRO</h2></div>
     	<form class="formulario" action="" method="post" enctype="multipart/form-data">
+<<<<<<< HEAD
 
     	<div class="primeros-tres">
     		<div class="registro-cont-nombre">
@@ -91,6 +147,25 @@ if ($_POST) {
 		  		<input type="text" name="name" value="<?php if(isset($name)){echo $name;}?>" class="in-nombre-r">
 			</div>
 
+=======
+<<<<<<< HEAD
+
+    	<div class="primeros-tres">
+    		<div class="registro-cont-nombre">
+    	  		<div class="label-nombre-r"><label>Nombre completo:</label></div>
+		  		<input type="text" name="name" value="<?php if(isset($name)){echo $name;}?>" class="in-nombre-r">
+			</div>
+
+=======
+
+    	<div class="primeros-tres">
+    		<div class="registro-cont-nombre">
+    	  		<div class="label-nombre-r"><label>Nombre completo:</label></div>
+		  		<input type="text" name="name" value="<?php if(isset($name)){echo $name;}?>" class="in-nombre-r">
+			</div>
+
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
+>>>>>>> 013ff666f45a1c9f68d55531a173f5a34a967062
 
 			<div class="registro-cont-correo">
 				<div class="label-correo-r"><label>Correo Electrónico:</label></div>
@@ -124,6 +199,39 @@ if ($_POST) {
       <button type="submit" class="enviar-r" name="button">ENVIAR</button>
    </form>
  </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <div class="errores">
+        <ul>
+
+          <?php if (isset($errores)): ?>
+            <?php foreach ($errores as $key => $value) {
+              echo '<li>'. $value .'</li>' ;
+            }?>
+          <?php endif; ?>
+        </ul>
+
+      </div>
+      <div class="container_formulario">
+        <!-- agrego enctype multiform para probar si anda file upload -->
+        <form class="formulario" action="" method="post" enctype="multipart/form-data">
+          Nombre completo <input type="text" name="name" value="<?php if(isset($name)){echo $name;} ?>"><br>
+          E-mail <input type="email" name="email" value="<?php if(isset($email)){echo $email;} ?>"><br>
+          Edad <input type="number" name="age" value="<?php if(isset($age)){echo $age;} ?>"><br>
+          Contraseña <input type="password" name="pass" value="" placeholder="Escriba su contaseña"><br>
+          Repita la contraseña <input type="password" name="repass" value="" placeholder="Vuelva a escribir la contraseña"><br>
+          Subi tu imagen <input type="file" name="perfil" value=""><br>
+          <button type="submit" name="button">Enviar</button>
+        </form>
+    </div>
+>>>>>>> cb4a635514d9aade066d6b1b04f1236e9b97993d
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
+>>>>>>> 013ff666f45a1c9f68d55531a173f5a34a967062
 
   </body>
 </html>
