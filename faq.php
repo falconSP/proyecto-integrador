@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html>
 
@@ -6,7 +9,7 @@ include_once ("includes/head.php");
 ?>
 
 <body>
-  
+
 <?php
 include_once ("includes/nav.php");
  ?>
@@ -182,12 +185,14 @@ include_once ("includes/nav.php");
 
 </div>
 
-<a href="contacto.php"><div class="contactanos">
-	<div class="contactanos-p"><p>¿Más preguntas? ¡Contactanos!</p></div>
-	<label class="arrow">
-		<span class="ion-arrow-right-c"></span><!-- icono de flecha -->
-	</label>
-</div></a>
+<a href="contacto.php">
+	<div class="contactanos">
+		<div class="contactanos-p"><p><a href="index.php#ancla_contacto">¿Más preguntas? ¡Contactanos!</a></p></div>
+		<label class="arrow">
+			<span class="ion-arrow-right-c"></span><!-- icono de flecha -->
+		</label>
+	</div>
+</a>
 
 <?php
 include_once ("includes/footer.php")
@@ -195,15 +200,3 @@ include_once ("includes/footer.php")
 
 </body>
 </html>
-
-
-
-
-
-
-	<!--style="color:#CCCCCC;"
-	style="color:#999999;"
-	style="color:#FF9900;"
-	style="color:#FF6600;"
-	style="color:#0099CC;"
-	style="color:#333399;"-->
