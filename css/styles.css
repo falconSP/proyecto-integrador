@@ -306,12 +306,65 @@ text-align: center;
 }
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 /*ESTILO CONTACTO INDEX*/
 
 .contenedor-contacto{
 	background-color: white;
 	margin: 10% auto;
 	width: 70%;
+}
+
+#input1, #input2, #input3, #input4{
+	width: 80%;
+	font-size: 2em;
+	border: solid 1px black;
+	text-align: center;
+<<<<<<< HEAD
+}
+#input5{
+	border: solid 3px orange;
+	font-size: 2em;
+	background-color: white;
+=======
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
+}
+#input5{
+	border: solid 3px orange;
+	font-size: 2em;
+	background-color: white;
+}
+
+#input1:hover, #input2:hover, #input3:hover, #input4:hover{
+	border: solid 1px orange;
+}
+#input5:hover{
+	color: orange;
+=======
+/* ocultamos el checkbox */
+#abre-respuesta0, #abre-respuesta1, #abre-respuesta2, #abre-respuesta3, #abre-respuesta4, #abre-respuesta5, #abre-respuesta6, #abre-respuesta7{
+  display: none;
+}
+
+
+/*ESTILO CONTACTO INDEX*/
+
+<<<<<<< HEAD
+#input1:hover, #input2:hover, #input3:hover, #input4:hover{
+	border: solid 1px orange;
+}
+#input5:hover{
+	color: orange;
+=======
+.contenedor-contacto{
+	background-color: white;
+	margin: 10% auto;
+	width: 70%;
+>>>>>>> cc4366908cf6cf5c2ab784ae4f3d4876740ed375
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 }
 
 #input1, #input2, #input3, #input4{
@@ -326,6 +379,12 @@ text-align: center;
 	background-color: white;
 }
 
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+
+=======
+=======
 #input1:hover, #input2:hover, #input3:hover, #input4:hover{
 	border: solid 1px orange;
 }
@@ -335,6 +394,8 @@ text-align: center;
 
 
 
+>>>>>>> cc4366908cf6cf5c2ab784ae4f3d4876740ed375
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 .nombre-contacto, .mail-contacto, .asunto-contacto, .mensaje-contacto{
 	margin-bottom: 10%;
 	text-align: center;
@@ -369,6 +430,18 @@ text-align: center;
 	text-align: left;
 	color: red;
 }
+<<<<<<< HEAD
+=======
+
+.container-formulario{
+	width: 90%;
+	margin: 15% auto;
+	padding: 5% 15%;
+	text-align: center;
+	font-size: 2em;
+	background-color: white;
+}
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 
 .container-formulario{
 	width: 90%;
@@ -379,7 +452,10 @@ text-align: center;
 	background-color: white;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 .registro-cont-nombre, .registro-cont-correo, .registro-cont-edad, .registro-cont-pass, .registro-cont-repass, .registro-cont-avatar{
 	margin-bottom: 10%;
 	text-align: center;
@@ -427,6 +503,7 @@ text-align: center;
 	margin: 20% 10%;
 	text-align: center;
 	padding: 10%;
+<<<<<<< HEAD
 }
 
 .login-titulo{
@@ -435,6 +512,17 @@ text-align: center;
 	font-size: 4em;
 }
 
+=======
+<<<<<<< HEAD
+}
+
+.login-titulo{
+	border-bottom: double 10px orange;
+	margin-bottom: 10%;
+	font-size: 4em;
+}
+
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 .input-login1, .input-login2{
 	border: solid 2px black;
 	text-align: center;
@@ -460,10 +548,17 @@ text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
 
 /*fin de login*/
 
+=======
+
+
+/*fin de login*/
+
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 /*perfil-usuarios*/
 .container_perfil{
   text-align: center;
@@ -472,6 +567,7 @@ text-align: center;
 
 /* empieza mi perfil*/
 
+<<<<<<< HEAD
 
 .container_perfil{
 /*	border: solid 2px orange;*/
@@ -546,7 +642,120 @@ text-align: center;
 .ion-happy-outline{
 	font-size: 7em;
 }
+=======
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 
+.container_perfil{
+/*	border: solid 2px orange;*/
+	background-color: white;
+	margin: 30% 5%;
+	padding: 10%;
+}
+
+.info-perfil{
+/*	background-color: white;*/
+	margin: 10% 0;
+	padding: 5%;
+	font-size: 1.5em;
+	border-top: double 10px orange;
+	border-bottom: double 10px orange;
+	color: black;
+}
+
+.titulo-perfil{
+	text-transform: uppercase;
+}
+.nombre-perfil{
+	text-transform: uppercase;
+	color: orange;
+}
+
+.titulo-info{
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.img-perfil{
+	border-radius: 50%;
+	width: 60%;
+	border: solid 2px orange;
+	margin-bottom: 5%;
+	margin-top: 5%
+}
+
+.boton-salir-login{
+	background-color: transparent;
+	font-size:2em;
+	margin: 10%;
+	padding: 2%;
+/*	border: solid 2px orange;*/
+	text-transform: uppercase;
+}
+.boton-salir-login:hover{
+	color: #85C1E9;
+}
+.nombre-email-perfil{
+	text-align: left;
+	margin-bottom: 5%;
+}
+
+.nombre-email-perfil ul{
+	list-style: circle;
+}
+
+
+
+/*register-ok*/
+
+.r-ok-contenedor{
+	padding: 5%;
+	margin: 30% 5%;
+	border: solid 4px orange;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+
+.ion-happy-outline{
+	font-size: 7em;
+}
+=======
+}
+
+.login-titulo{
+	border-bottom: double 10px orange;
+	margin-bottom: 10%;
+	font-size: 4em;
+}
+
+.input-login1, .input-login2{
+	border: solid 2px black;
+	text-align: center;
+	margin-bottom: 5%;
+	font-size: 2em;
+}
+
+.input-login1:hover, .input-login2:hover{
+	border: solid 2px orange;
+}
+
+.enviar-login{
+	border: solid 2px orange;
+	background-color: white;
+	font-size: 2.5em;
+	margin-top: 5%;
+}
+.enviar-login:hover{
+	color: white;
+  background-color: orange;
+}
+/*fin de login*/
+>>>>>>> cc4366908cf6cf5c2ab784ae4f3d4876740ed375
+
+/*perfil-usuarios*/
+.container_perfil{
+  text-align: center;
+  margin-top: 150px;
+}
 
 
 
@@ -627,6 +836,10 @@ text-align: center;
 	margin-top: 0;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 /*boton de contactanos-faq*/
 .contactanos{
   margin: 5% 60% 5% 5%;
@@ -649,6 +862,11 @@ text-align: center;
 }
 
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> cc4366908cf6cf5c2ab784ae4f3d4876740ed375
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 /*A partir de aca laptop*/
 @media (min-width: 1200px){
   .container{
@@ -726,16 +944,30 @@ text-align: center;
 
 
 .input-login1, .input-login2{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 	font-size: 2em;
 }
 .input-login1, .input-login2{
 	margin-bottom: 3%;
+<<<<<<< HEAD
+=======
+=======
+	font-size: 2.7em;
+>>>>>>> cc4366908cf6cf5c2ab784ae4f3d4876740ed375
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 }
 
 .enviar-login{
 	font-size: 3em;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 /*boton de contactanos-faq*/
 .contactanos{
   margin: 5% 70% 5% 3%;
@@ -797,4 +1029,9 @@ text-align: center;
 }
 
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> cc4366908cf6cf5c2ab784ae4f3d4876740ed375
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
 }

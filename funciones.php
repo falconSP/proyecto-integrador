@@ -88,6 +88,7 @@ function estaLogueado() {
 		}
 
 		return $errores;
+<<<<<<< HEAD
 	}
 
   function validarContacto($data){
@@ -116,3 +117,6 @@ function estaLogueado() {
 
   	return $errores;
   }
+=======
+	}
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324

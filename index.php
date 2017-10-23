@@ -77,14 +77,30 @@ session_start();
 
   		if (empty($erroresFinales)) {
   			// tengo que mandar el mensaje - Averiguar como se hace
+<<<<<<< HEAD
   			header('location: index.php'); exit;
+=======
+  			header('location: fin-contacto.php'); exit;
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
   		}
   }
 
   ?>
+<<<<<<< HEAD
   <a name="ancla_contacto"></a>
   <div class="contenedor-contacto">
    <h1 class="titulo-contacto">CONTACTANOS</h1>
+=======
+<<<<<<< HEAD
+  <a name="ancla_contacto"></a>
+  <div class="contenedor-contacto">
+   <h1 class="titulo-contacto">CONTACTANOS</h1>
+=======
+  <div class="contenedor-contacto">
+   <h1 class="titulo-contacto">CONTACTANOS</h1>
+    <a name="ancla_contacto"></a>
+>>>>>>> cc4366908cf6cf5c2ab784ae4f3d4876740ed375
+>>>>>>> 3e28eeca67d0485588798d6eaaf0955668e29324
    	<form action="index.php#ancla_contacto" method="post">
 
    		<div class="nombre-contacto">
