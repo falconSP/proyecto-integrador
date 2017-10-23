@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 session_start();
+=======
+  session_start();
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
 ?>
 <!DOCTYPE html>
 <html>
@@ -7,6 +11,21 @@ session_start();
   include_once ("includes/head.php");
   ?>
   <body>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+    <p>Lo agregué desde Gonza</p>
+    <!-- prueba boton de logout -->
+    <p><a href="logout.php">Log Out Btn</a></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+>>>>>>> 57acc1375aff2097b05aa8753bf503e84ec09644
+>>>>>>> cb4a635514d9aade066d6b1b04f1236e9b97993d
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
   <header class="main-header">
 
   <div class="fake-bg"></div>
@@ -83,13 +102,30 @@ session_start();
 
   ?>
   <div class="contenedor-contacto">
+<<<<<<< HEAD
    <h1 class="titulo-contacto">CONTACTANOS</h1>
+=======
+<<<<<<< HEAD
+   <h1 class="titulo-contacto">CONTACTANOS</h1>
+=======
+>>>>>>> cb4a635514d9aade066d6b1b04f1236e9b97993d
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
     <a name="ancla_contacto"></a>
    	<form action="index.php#ancla_contacto" method="post">
 
    		<div class="nombre-contacto">
+<<<<<<< HEAD
 <!--  	 	<label for="nombre-contacto">Nombre Completo:</label>-->
   		<input id="input1" type="text" name="nombreContacto" value="<?=$nombreContacto;?>" placeholder="Nombre Completo">
+=======
+<<<<<<< HEAD
+<!--  	 	<label for="nombre-contacto">Nombre Completo:</label>-->
+  		<input id="input1" type="text" name="nombreContacto" value="<?=$nombreContacto;?>" placeholder="Nombre Completo">
+=======
+  	 	<label for="nombre-contacto">Nombre Completo:</label>
+  		<input id="input1" type="text" name="nombreContacto" value="<?=$nombreContacto;?>">
+>>>>>>> cb4a635514d9aade066d6b1b04f1236e9b97993d
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
   		<?php if (isset($erroresFinales['nombreContacto'])): ?>
   				<span><i class="ion-ios-close"></i></span>
   				<span><?=$erroresFinales['nombreContacto'];?></span>
@@ -97,8 +133,18 @@ session_start();
   		</div>
 
   		<div class="mail-contacto">
+<<<<<<< HEAD
 <!--  		<label for="mail-contacto">Correo Electrónico:</label>-->
   		<input id="input2" type="email" name="mailContacto" value="<?=$mailContacto;?>" placeholder="Correo Electrónico">
+=======
+<<<<<<< HEAD
+<!--  		<label for="mail-contacto">Correo Electrónico:</label>-->
+  		<input id="input2" type="email" name="mailContacto" value="<?=$mailContacto;?>" placeholder="Correo Electrónico">
+=======
+  		<label for="mail-contacto">Correo Electrónico:</label>
+  		<input id="input2" type="email" name="mailContacto" value="<?=$mailContacto;?>" placeholder=" example@example.com">
+>>>>>>> cb4a635514d9aade066d6b1b04f1236e9b97993d
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
   		<?php if (isset($erroresFinales['mailContacto'])): ?>
   				<span><i class="ion-ios-close"></i></span>
   				<span><?=$erroresFinales['mailContacto'];?></span>
@@ -106,8 +152,18 @@ session_start();
   		</div>
 
   		<div class="asunto-contacto">
+<<<<<<< HEAD
 <!--  	 	<label for="asunto-contacto">Asunto:</label>-->
   		<input id="input3" type="text" name="asuntoContacto" value="<?=$asuntoContacto;?>" placeholder="Asunto del Mensaje">
+=======
+<<<<<<< HEAD
+<!--  	 	<label for="asunto-contacto">Asunto:</label>-->
+  		<input id="input3" type="text" name="asuntoContacto" value="<?=$asuntoContacto;?>" placeholder="Asunto del Mensaje">
+=======
+  	 	<label for="asunto-contacto">Asunto:</label>
+  		<input id="input3" type="text" name="asuntoContacto" value="<?=$asuntoContacto;?>">
+>>>>>>> cb4a635514d9aade066d6b1b04f1236e9b97993d
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
   		<?php if (isset($erroresFinales['asuntoContacto'])): ?>
   				<span><i class="ion-ios-close"></i></span>
   				<span><?=$erroresFinales['asuntoContacto'];?></span>
@@ -115,6 +171,10 @@ session_start();
   		</div>
 
   		<div class="mensaje-contacto">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
 <!--  		<label for="mensaje-contacto">Tu mensaje:</label><br>-->
   		<textarea id="input4" name="mensaje-contacto" placeholder="Dejanos tu mensaje.."></textarea>
   		</div>
@@ -122,6 +182,17 @@ session_start();
   		<div class="enviar-contacto">
   		<button type="submit" id="input5">ENVIAR</button>
 <!--  		<input id="input5" type="submit">-->
+<<<<<<< HEAD
+=======
+=======
+  		<label for="mensaje-contacto">Tu mensaje:</label><br>
+  		<textarea name="mensaje-contacto"></textarea>
+  		</div>
+
+  		<div class="enviar-contacto">
+  		<input id="input4" type="submit">
+>>>>>>> cb4a635514d9aade066d6b1b04f1236e9b97993d
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
   		</div>
 
   	</form>

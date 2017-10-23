@@ -382,7 +382,11 @@ text-align: center;
 /*Fin de faq.php y contacto.php*/
 
 
+<<<<<<< HEAD
 /*A partir de aca el registro*/
+=======
+/*A partir de aca el registro y login en mobile first*/
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
 .errores{
 	font-size: 1em;
 	margin-bottom: 5%;
@@ -392,11 +396,16 @@ text-align: center;
 
 .container-formulario{
 	width: 90%;
+<<<<<<< HEAD
 	margin: 15% auto;
+=======
+	margin: 25% auto;
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
 	padding: 5% 15%;
 	text-align: center;
 	font-size: 2em;
 	background-color: white;
+<<<<<<< HEAD
 }
 
 
@@ -482,6 +491,59 @@ text-align: center;
 .container_perfil{
   text-align: center;
   margin-top: 150px;
+=======
+}
+
+
+.registro-cont-nombre, .registro-cont-correo, .registro-cont-edad, .registro-cont-pass, .registro-cont-repass, .registro-cont-avatar{
+	margin-bottom: 10%;
+	text-align: center;
+/*	overflow: hidden;*/
+}
+.registro-cont-nombre{
+	padding-top: 10%;
+	border-top: double 10px orange;
+}
+
+.label-nombre-r, .label-correo-r, .label-edad-r, .label-pass-r, .label-repass-r, .label-avatar-r{
+/*	float: left;*/
+}
+
+.in-nombre-r, .in-correo-r, .in-edad-r, .in-pass-r, .in-repass-r, .in-avatar-r{
+/*	clear: both;*/
+	width: 100%;
+	border: solid 1px black;
+}
+
+.in-nombre-r:hover, .in-correo-r:hover, .in-edad-r:hover, .in-pass-r:hover, .in-repass-r:hover{
+	border: solid 1px orange;
+}
+
+#input-file{
+	font-size: 0.7em;
+}
+#input-file:hover{
+	color: orange;
+}
+
+.enviar-r{
+	border: solid 3px orange;
+	background-color: white;
+}
+
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> cb4a635514d9aade066d6b1b04f1236e9b97993d
+/*fin de registro*/
+
+.container_formulario {
+  text-align: center;
+  padding: 30px;
+
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
 }
 
 
@@ -594,14 +656,22 @@ text-align: center;
 	width: 50%;
     }
   .titulo-contacto{
+<<<<<<< HEAD
 	font-size: 2.5em;
+=======
+	font-size: 2.5em;	
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
 	}
 /*	registro*/
 	.container-formulario{
 	width: 70%;
 	padding: 5%;
 	font-size: 2em;
+<<<<<<< HEAD
 	margin-top: 15%;
+=======
+	margin-top: 20%;
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
 /*	background-color: red;*/
 	}
 	.primeros-tres{
@@ -632,6 +702,7 @@ text-align: center;
 	.in-nombre-r, .in-correo-r, .in-edad-r, .in-pass-r, .in-repass-r, .in-avatar-r{
 	   margin-top: 3%;
 	}
+<<<<<<< HEAD
 
 .container-login{
 	margin: 15% 25% 10% 25%;
@@ -647,4 +718,9 @@ text-align: center;
 	font-size: 3em;
 }
 
+=======
+	
+	
+	
+>>>>>>> 6d81372422fa2fed15af7ddd68f320ac1e46549c
 }
