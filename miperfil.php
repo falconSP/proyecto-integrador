@@ -1,6 +1,9 @@
 <?php
 session_start();
 include_once("funciones.php");
+if (!isset($_SESSION[userId])) {
+  header("location:index.php");
+}
  ?>
 
 <!DOCTYPE html>
@@ -26,15 +29,23 @@ include_once ("includes/head.php");
         }
       ?>
 
-      <h1>Bienvenido <?php echo $nombre; ?>, a tu perfil</h1>
-      <h2>Información:</h2>
-      <img style="border-radius: 50%; width: 60%;" src="images/avatares/<?php echo $email.'.jpg'; ?>" alt="">
+      <h2 class="titulo-perfil">¡Bienvenido a tu perfil!</h2>
+      <h1 class="nombre-perfil"><?php echo $nombre; ?></h1>
 
-      <ul>
-        <li>Nombre completo: <?php echo $nombre; ?></li>
-        <li>Email: <?php echo $email; ?></li>
-      </ul>
-      <a style="background-color: white; font-size:2em; margin: 15px;"href="logout.php">Salir</a>
+      <div class="info-perfil">
+      	<img class="img-perfil" src="images/avatares/<?php echo $email.'.jpg'; ?>" alt="">
+
+      	<div class="nombre-email-perfil">
+      	<h2 style="text-transform: uppercase;">Información:</h2>
+			<ul>
+				<li>Nombre completo: <?php echo $nombre; ?></li>
+				<li>Email: <?php echo $email; ?></li>
+			</ul>
+        </div>
+      </div>
+
+      <a class="boton-salir-login" href="logout.php">Salir</a>
+
     </div>
 
   </body>

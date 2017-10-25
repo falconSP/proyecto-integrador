@@ -285,38 +285,18 @@ text-align: center;
 .contactanos{
   background-color: #85C1E9;
   /*font-size: 10px;*/
-  margin: 50px 0 60px 80px;
-  overflow: hidden;
-  width: 400px;
-  /*box-shadow: 0 0 10px #000;*/
-  border-radius: 20px;
+  margin: 10% 40% 10% 10%;
   border: solid white 2px;
+  text-align: center;
 }
 
-.contactanos-p p{
-  font-size: 20px;
+.contactanos-p{
+  font-size: 1em;
   color: black;
 }
 
 .contactanos:hover{
-  width: 450px;
   background-color: orange;
-}
-
-.arrow{
-  float: right;
-  font-size: 2.5em;
-  display: block;
-  margin: auto;
-  width: 50px;
-  padding: 30px 50px;
-  text-align: center;
-    color: white;
-}
-
-.contactanos-p{
-  float: left;
-  margin: 10px 0 10px 20px;
 }
 
 
@@ -476,6 +456,12 @@ text-align: center;
 	color: white;
   background-color: orange;
 }
+.recordar {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+
 /*fin de login*/
 
 /*perfil-usuarios*/
@@ -483,6 +469,84 @@ text-align: center;
   text-align: center;
   margin-top: 150px;
 }
+
+/* empieza mi perfil*/
+
+
+.container_perfil{
+/*	border: solid 2px orange;*/
+	background-color: white;
+	margin: 30% 5%;
+	padding: 10%;
+}
+
+.info-perfil{
+/*	background-color: white;*/
+	margin: 10% 0;
+	padding: 5%;
+	font-size: 1.5em;
+	border-top: double 10px orange;
+	border-bottom: double 10px orange;
+	color: black;
+}
+
+.titulo-perfil{
+	text-transform: uppercase;
+}
+.nombre-perfil{
+	text-transform: uppercase;
+	color: orange;
+}
+
+.titulo-info{
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.img-perfil{
+	border-radius: 50%;
+	width: 60%;
+	border: solid 2px orange;
+	margin-bottom: 5%;
+	margin-top: 5%
+}
+
+.boton-salir-login{
+	background-color: transparent;
+	font-size:2em;
+	margin: 10%;
+	padding: 2%;
+/*	border: solid 2px orange;*/
+	text-transform: uppercase;
+}
+.boton-salir-login:hover{
+	color: #85C1E9;
+}
+.nombre-email-perfil{
+	text-align: left;
+	margin-bottom: 5%;
+}
+
+.nombre-email-perfil ul{
+	list-style: circle;
+}
+
+
+
+/*register-ok*/
+
+.r-ok-contenedor{
+	padding: 5%;
+	margin: 30% 5%;
+	border: solid 4px orange;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+
+.ion-happy-outline{
+	font-size: 7em;
+}
+
 
 
 
@@ -501,7 +565,7 @@ text-align: center;
     text-transform: uppercase;
   }
 	nav{
-    display: inline-block;
+    display: block;
 		width: 100%;
 		height: auto;
 		position: relative;
@@ -562,6 +626,28 @@ text-align: center;
 	font-size: 3.5em;
 	margin-top: 0;
 }
+
+/*boton de contactanos-faq*/
+.contactanos{
+  margin: 5% 60% 5% 5%;
+}
+
+
+/*miperfil*/
+
+.container_perfil{
+	margin: 12% 10%;
+	padding: 5%;
+}
+
+.info-perfil{
+	font-size: 2em;
+}
+
+.boton-salir-login{
+	font-size:2.5em;
+}
+
 
 /*A partir de aca laptop*/
 @media (min-width: 1200px){
@@ -640,11 +726,75 @@ text-align: center;
 
 
 .input-login1, .input-login2{
-	font-size: 2.7em;
+	font-size: 2em;
+}
+.input-login1, .input-login2{
+	margin-bottom: 3%;
 }
 
 .enviar-login{
 	font-size: 3em;
 }
+
+/*boton de contactanos-faq*/
+.contactanos{
+  margin: 5% 70% 5% 3%;
+}
+
+/*miperfil*/
+.container_perfil{
+	margin: 12% 10%;
+	padding: 5%;
+}
+
+.info-perfil{
+	font-size: 2em;
+}
+
+.boton-salir-login{
+	font-size:3em;
+}
+
+/*miperfil*/
+
+	.nombre-email-perfil{
+/*		background-color: bisque;*/
+		float: right;
+		margin-top: 10%;
+	}
+
+
+	.info-perfil{
+		overflow: hidden;
+	}
+
+	.img-perfil{
+/*		float: right;*/
+		width: 40%;
+		margin: 0;
+	}
+
+	.nombre-perfil{
+		font-size: 5em;
+	}
+
+	.titulo-perfil{
+		font-size: 3em;
+	}
+
+
+/*	registrarte-ok*/
+
+
+	.r-ok-contenedor{
+	padding: 5%;
+	margin: 25% 10%;
+	border: solid 6px orange;
+}
+
+.ion-happy-outline{
+	font-size: 15em;
+}
+
 
 }

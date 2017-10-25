@@ -89,3 +89,30 @@ function estaLogueado() {
 
 		return $errores;
 	}
+
+  function validarContacto($data){
+  		$errores = [];
+
+  		if (trim($data['nombreContacto']) == '') {
+  			$errores['nombreContacto'] = 'Escribe tu nombre.';
+  		} elseif (trim(count($data['nombreContacto'])) <= 6){
+  			$errores['nombreContacto'] = 'Escribe tu nombre y apellido.';
+  		}
+  //		} elseif (is_numeric(trim($data['nombreContacto']))){
+  //			$errores['nombreContacto'] = 'Tu nombre no puede contener números.';
+  //		}
+
+
+  		if (trim($data['mailContacto']) == '') {
+  			$errores['mailContacto'] = 'Escribe tu correo.';
+  		} elseif (!filter_var($data['mailContacto'], FILTER_VALIDATE_EMAIL)) {
+  			$errores['mailContacto'] = 'Correo inválido.';
+  		}
+
+
+  		if (trim($data['asuntoContacto']) == '') {
+  			$errores['asuntoContacto'] = 'Escribe un asunto.';
+  		}
+
+  	return $errores;
+  }

@@ -188,9 +188,6 @@ include_once ("includes/nav.php");
 <a href="contacto.php">
 	<div class="contactanos">
 		<div class="contactanos-p"><p><a href="index.php#ancla_contacto">¿Más preguntas? ¡Contactanos!</a></p></div>
-		<label class="arrow">
-			<span class="ion-arrow-right-c"></span><!-- icono de flecha -->
-		</label>
 	</div>
 </a>
 

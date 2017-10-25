@@ -77,14 +77,14 @@ session_start();
 
   		if (empty($erroresFinales)) {
   			// tengo que mandar el mensaje - Averiguar como se hace
-  			header('location: fin-contacto.php'); exit;
+  			header('location: index.php'); exit;
   		}
   }
 
   ?>
+  <a name="ancla_contacto"></a>
   <div class="contenedor-contacto">
    <h1 class="titulo-contacto">CONTACTANOS</h1>
-    <a name="ancla_contacto"></a>
    	<form action="index.php#ancla_contacto" method="post">
 
    		<div class="nombre-contacto">
