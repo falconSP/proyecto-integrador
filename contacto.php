@@ -26,6 +26,9 @@ include_once('funciones2.php');
 if(!hayConexion()){
   header("location:botones.php");
   exit();
+}elseif(Consulta() == false){
+  header("location:botones.php");
+  exit();
 }
 ?>
 

@@ -593,12 +593,15 @@ text-align: center;
 }
 
 
+.body-botones{
+	text-align: center;
+	padding-top: 80px;
+}
 
-
-
-
-
-
+.body-botones p{
+	color: white;
+	font-size: 30px;
+}
 
 
 

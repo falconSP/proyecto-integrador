@@ -1,7 +1,6 @@
 <?php
 require_once("funciones2.php");
 
-
 ?>
 <!doctype html>
 <html>
@@ -11,7 +10,7 @@ require_once("funciones2.php");
 <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="body-botones">
 	<div class="super-contenedor-botones">
 		<img class="imagen-botones" src="images/hombre-compu.jpg" alt="database">
 		<div class="contenedor-botones">
@@ -23,11 +22,6 @@ require_once("funciones2.php");
 			</form>	
 		</div>
 	</div>
-	
-	
-
-
-
 
 
 </body>

@@ -41,20 +41,24 @@ function validarLogin($data){
   $errores = [];
 
   if (($data['email']) == '') {
-    $errores['email'] = 'Che escribí el email!';
+    $errores['email'] = 'Escribí el email!';
+	  
   } elseif (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-    $errores['email'] = 'Che escribí un email valido!';
+    $errores['email'] = 'Escribí un email valido!';
+	  
   } else if (comprobarEmail($data['email']) == false) { // Busco el email que se está queriendo loguear, si no existe, tiro error
       $errores["email"] = "No existe el usuario";
+	  
+  } else if (($data['pass']) == ''){
+	  $errores['pass'] = 'Escribí la contraseña!';
+  
   } else {
-      $usuario = comprobarEmail($data['email']);
-  }
+    $usuario = comprobarEmail($data['email']);
 	
-  if (($data['pass']) == ''){
-	  $errores['pass'] = 'Che escribí la contrasena!';
-  } elseif (password_verify($data["pass"], $usuario["pass"]) == false) {
+    if (password_verify($data["pass"], $usuario["pass"]) == false) {
         $errores["email"] = 'La información ingresada es erronea. Verifica tus datos.';
-   }
+    }
+    }
 	
 	return $errores;
   }

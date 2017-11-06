@@ -11,11 +11,13 @@
 		
 	    $erroresLogin = validarLogin($_POST);
 		
-		echo ("<br>");
-	    var_dump($erroresLogin);
-		echo ("<br>");
-		var_dump($_POST);
-		
+		if (empty($erroresLogin)) {	
+	      $usuario = comprobarEmail($_POST["email"]);
+			
+	      loguear($usuario);
+			
+		  header('location: miperfil.php'); exit;
+		}	
 	}
 
   if (!isset($_SESSION['user_id']) && isset($_COOKIE['remember_me'])) {
@@ -46,6 +48,9 @@
 
 include_once('funciones2.php');
 if(!hayConexion()){
+  header("location:botones.php");
+  exit();
+}elseif(Consulta() == false){
   header("location:botones.php");
   exit();
 }

@@ -17,9 +17,9 @@ if(isset($_POST['crearDB'])){
 		$sql = "CREATE SCHEMA `EcommerceDB`";
 		$conn->prepare($sql);
 		$conn->exec($sql);
-		echo "DB created successfully";
+		echo "<p>¡Se creo la DB!</p>";
 	} else {
-		echo "No se creo la DB";
+		echo "<p>No se pudo crear la DB</p>";
 	}
 
 //creamos la tabla
@@ -48,9 +48,9 @@ if(isset($_POST['crearDB'])){
 
 		$conn->prepare($sql);
 		$conn->exec($sql);
-		echo "Tabla creada exitosamente!";
+		echo "<p>¡Tabla creada exitosamente!</p>";
 	} else {
-		echo "No se creo la Tabla";
+		echo "<p>No se pudo crear la Tabla</p>";
 	}
 }
 
@@ -83,9 +83,9 @@ elseif (isset($_POST['migrarDatos'])) {
 			$stmt->execute();
 		}
 
-		echo "Datos migrados exitosamente!";
+		echo "<p>¡Datos migrados exitosamente!</p>";
 	} else {
-		echo "No se lograron migrar los datos";
+		echo "<p>No se lograron migrar los datos</p>";
 	}
 }
 
@@ -101,4 +101,15 @@ try {
 	echo $e->getMessage();
 }
 return $conn;
+}
+
+function Consulta(){
+	$dsn = 'mysql:host=localhost;dbname=EcommerceDB;';
+	$db_username = 'root';
+	$db_password = '';
+	$conn = new PDO($dsn, $db_username, $db_password);
+	
+	$query = $conn->query("SELECT * FROM users");
+	
+	return $query;
 }
